@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,36 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Italian restaurant theme colors
+				warm: {
+					50: '#fdf7f0',
+					100: '#f9e9d5',
+					200: '#f2d3ab',
+					300: '#e9b677',
+					400: '#de9441',
+					500: '#d1721e',
+					600: '#b85a14',
+					700: '#944613',
+					800: '#7a3a16',
+					900: '#643115',
+				},
+				sage: {
+					50: '#f6f7f4',
+					100: '#eaede6',
+					200: '#d6dccf',
+					300: '#b8c4ab',
+					400: '#95a683',
+					500: '#778964',
+					600: '#5f6d4e',
+					700: '#4c5640',
+					800: '#3f4735',
+					900: '#363c2f',
 				}
+			},
+			fontFamily: {
+				serif: ['Playfair Display', 'serif'],
+				sans: ['Inter', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +114,22 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out'
 			}
 		}
 	},
