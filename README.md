@@ -1,73 +1,138 @@
-# Welcome to your Lovable project
+# Lucca Trattoria – Italian Restaurant Website
 
-## Project info
+Lucca Trattoria is a fully responsive, modern website for a fictional Italian restaurant. The project was created to experiment with Lovable AI, an AI-powered programming assistant. Through iterative prompts, the website was developed with a focus on clean design, elegant typography, warm colors, and an interactive user experience.
 
-**URL**: https://lovable.dev/projects/fb19f560-d472-4964-a784-a3fa90bedcfa
+---
 
-## How can I edit this code?
+## **Features**
 
-There are several ways of editing your application.
+- Fully responsive layout optimized for desktop and mobile
+- Hero section with welcome message and large food imagery
+- Complete menu with clickable dishes that open detail modals
+- "About Us" page with restaurant story and philosophy
+- Contact page with business hours, location, and reservation form
+- Clean code structure using components and data separation
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/fb19f560-d472-4964-a784-a3fa90bedcfa) and start prompting.
+## Used Technologies
 
-Changes made via Lovable will be committed automatically to this repo.
+### Application Technologies
 
-**Use your preferred IDE**
+- Next.js (React framework)  
+- Tailwind CSS (utility-first CSS)  
+- TypeScript  
+- Lovable AI (code generation via prompts)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Development Tools
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- VSCode  
+- Git & GitHub  
+- Node.js & npm  
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## **Installation**
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Requirements:
 
-# Step 3: Install the necessary dependencies.
-npm i
+- Node.js version 16 or newer
+- npm package manager
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/lucca-trattoria.git
+Navigate to the project directory:
+
+bash
+Copy
+Edit
+cd lucca-trattoria
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+Start the development server:
+
+bash
+Copy
+Edit
 npm run dev
-```
+Open your browser and go to http://localhost:3000 to view the website.
 
-**Edit a file directly in GitHub**
+### Usage
+The website contains the following main pages:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Home: Intro section with background image and welcome text.
 
-**Use GitHub Codespaces**
+Menu: Dishes categorized under Appetizers, Mains, Desserts, and Drinks. Click any item to see detailed info including an image, ingredients, preparation time, and allergens.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+About: Short story of the fictional restaurant.
 
-## What technologies are used for this project?
+Contact: Reservation form with fields for name, email, date, and time. Includes location and opening hours.
 
-This project is built with:
+Project Structure Overview
+Components separated by concern for maintainability.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Data files (e.g., menuData.ts) hold menu items and details.
 
-## How can I deploy this project?
+Tailwind CSS classes provide styling with utility-first approach.
 
-Simply open [Lovable](https://lovable.dev/projects/fb19f560-d472-4964-a784-a3fa90bedcfa) and click on Share -> Publish.
+Responsive design optimized for desktop and mobile devices.
 
-## Can I connect a custom domain to my Lovable project?
+### Contributing
+If you want to contribute:
 
-Yes, you can!
+Fork the repository.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Create a feature branch:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+bash
+Copy
+Edit
+git checkout -b feature/your-feature-name
+Make your changes.
+
+Commit your changes with descriptive messages:
+
+bash
+Copy
+Edit
+git commit -m "Add your message here"
+Push the branch:
+
+bash
+Copy
+Edit
+git push origin feature/your-feature-name
+Open a pull request for review.
+
+Please follow consistent code style and write clear commit messages.
+
+### Troubleshooting / FAQ
+Q: The reservation form does not send data.
+A: The form is frontend-only. Connect it to a backend such as Supabase or a serverless function to handle submissions.
+
+Q: Can I replace the placeholder food images?
+A: Yes. Replace image URLs or files in the public folder or update menuData.ts.
+
+Q: How do I add new dishes to the menu?
+A: Add new items in menuData.ts following the existing object structure.
+
+### License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+### Changelog
+Version 1.0.0
+Initial release created with Lovable AI
+
+Fully responsive layout with four main pages
+
+Clickable menu items with modal details
+
+First iteration of design and functionality complete
+
